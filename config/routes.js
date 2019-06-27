@@ -14,7 +14,7 @@ files.forEach(fileName => {
         });
     } else {
         routes.push({
-            path: `/${fileName}`,
+            path: `/api/${fileName}`,
             handler: require(`.${routesPath}/${fileName}`)
         });
     }
